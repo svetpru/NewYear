@@ -18,10 +18,10 @@ $("#tree>img").click(function(e){
         music.play(0);
     }
     else if(name == "toy2"){
-        music.play(1);
+        music.play(0);
     }
     else if(name == "toy3"){
-        music.play(2);
+        music.play(0);
     }
 });
 
