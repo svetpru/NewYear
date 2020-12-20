@@ -46,6 +46,8 @@ body {
     width: 45px;
     left: 25%;
     top: 50%;
+    transform-origin: top;
+    animation: toyShake linear 4s infinite; 
     filter: invert(45%) sepia(69%) saturate(456%) hue-rotate(197deg) brightness(99%) contrast(99%);
 }
 #toy2{
@@ -53,6 +55,8 @@ body {
     width: 45px;
     left: 33%;
     top: 32%;
+    transform-origin: top;
+    animation: toyShake linear 3s infinite; 
     filter: invert(45%) sepia(55%) saturate(4034%) hue-rotate(333deg) brightness(97%) contrast(90%);
 }
 #toy3{
@@ -60,8 +64,35 @@ body {
     width: 45px;
     left: 13%;
     top: 70%;
+    transform-origin: top;
+    animation: toyShake linear 5s infinite; 
     filter: invert(90%) sepia(11%) saturate(971%) hue-rotate(25deg) brightness(101%) contrast(98%);
 }
+
+@keyframes toyShake{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    25%{
+        transform: rotate(20deg);
+    }
+
+    50%{
+        transform: rotate(0deg);
+    }
+
+    75%{
+        transform: rotate(-20deg);
+    }
+
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+
+
 
 #player>img {
     position: relative;
