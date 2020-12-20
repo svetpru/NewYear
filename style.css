@@ -69,6 +69,10 @@ body {
     filter: invert(90%) sepia(11%) saturate(971%) hue-rotate(25deg) brightness(101%) contrast(98%);
 }
 
+.shaking{
+    animation: toyShake linear 3s infinite;
+}
+
 @keyframes toyShake{
     0%{
         transform: rotate(0deg);

@@ -12,16 +12,22 @@ $(document).ready(function () {
 });
 
 $("#tree>img").click(function(e){
+
+    $("#tree>img").addClass("sharking");
+
     music.fade(1, 0, 1000, music);
     let name = e.target.id;
 
     if(name == "toy1"){
+        $(e.target).removeClass("sharking");
         music.play(0);
     }
     else if(name == "toy2"){
+        $(e.target).removeClass("sharking");
         music.play(0);
     }
     else if(name == "toy3"){
+        $(e.target).removeClass("sharking");
         music.play(0);
     }
 });
