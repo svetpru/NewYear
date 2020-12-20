@@ -32,13 +32,35 @@ body {
 }
 
 /*Музыкальная игрушка*/
-#player {
+#tree {
     position: fixed;
-    left: 90%;
-    background-image: url("img/tree_toy.png");
+    left: 5%;
+
+    background-image: url("img/elka.png");
     background-size: contain;
-    width: 75px;
-    height: 145px;
+    width: 280px;
+    height: 455px;
+}
+#toy1{
+    position: relative;
+    width: 45px;
+    left: 25%;
+    top: 50%;
+    filter: invert(45%) sepia(69%) saturate(456%) hue-rotate(197deg) brightness(99%) contrast(99%);
+}
+#toy2{
+    position: relative;
+    width: 45px;
+    left: 33%;
+    top: 32%;
+    filter: invert(45%) sepia(55%) saturate(4034%) hue-rotate(333deg) brightness(97%) contrast(90%);
+}
+#toy3{
+    position: relative;
+    width: 45px;
+    left: 13%;
+    top: 70%;
+    filter: invert(90%) sepia(11%) saturate(971%) hue-rotate(25deg) brightness(101%) contrast(98%);
 }
 
 #player>img {
@@ -65,4 +87,18 @@ body {
 
 #graz>h1{
     font-size: 60pt;
+}
+
+#countdown{
+    position: absolute;
+    left:51%;
+    top: 48%;
+    color: snow;
+    font-family: 'Russo One', sans-serif;
+}
+#countdown>p{
+    font-size: 20pt;
+}
+#countdown>span{
+    font-size: 50pt;
 }
