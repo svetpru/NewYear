@@ -35,10 +35,11 @@ let timer = setInterval(function(){
     //Разность дат
     let diff = newYear - now;
 
-    let seconds = Math.floor(diff/1000);
-    let minutes = Math.floor(seconds/60);
-    let hours = Math.floor(minutes/60);
-    let days = Math.floor(hours/24);
+    let days = Math.floor(diff/(24*60*60*1000));
+    let hours = Math.floor(diff%(24*60*60*1000) / (60*60*1000));
+    let minutes = Math.floor(diff%(60*60*1000) / (60*1000));
+    let seconds = Math.floor(diff%(60*1000) / 1000);
+    
 
     $("#seconds").text(seconds);
     $("#minutes").text(minutes + ":");
