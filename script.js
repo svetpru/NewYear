@@ -5,13 +5,14 @@ let music;
 $(document).ready(function () {
 
     music = new Howl({
-       src: ["img/Audio.mpeg"],
+       src: ["img/Audio.mp3"],
        loop: true,
        volume: 0.75
     });
 });
 
 $("#tree>img").click(function(e){
+    music.fade(1, 0, 1000, music);
     let name = e.target.id;
 
     if(name == "toy1"){
