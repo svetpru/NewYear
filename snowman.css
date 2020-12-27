@@ -302,3 +302,11 @@
     }
 }
 /*===================================*/
+
+/* Для телефона */
+.snowmanMobile{
+    transform: scale(0.6);
+    position: absolute;
+    left:180px;
+    top:180px;
+}

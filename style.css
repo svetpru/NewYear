@@ -63,3 +63,32 @@ body {
 #countdown>span{
     font-size: 50pt;
 }
+
+
+
+/* Для телефона */
+#grazMobile{
+    position: absolute;
+    left: 15%;
+    top: 13%;
+    color: rgb(218, 255, 223);
+    font-family: 'Langar', cursive;
+}
+
+#grazMobile>h1{
+    font-size: 30pt;
+}
+
+#countdownMobile{
+    position: absolute;
+    left:51%;
+    top: 18%;
+    color: snow;
+    font-family: 'Russo One', sans-serif;
+}
+#countdownMobile>p{
+    font-size: 14pt;
+}
+#countdownMobile>span{
+    font-size: 16pt;
+}

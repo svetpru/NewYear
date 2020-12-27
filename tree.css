@@ -105,3 +105,17 @@
             0 0 50px 20px rgb(255, 217, 0);
     }
 }
+
+/* Телефон */
+/* Параметры_Ёлки */
+#treeMobile {
+    transform: scale(0.7);
+    position: fixed;
+    left: 0%;
+    top: 16%;
+
+    background-image: url("img/elka.png");
+    background-size: contain;
+    width: 280px;
+    height: 455px;
+}
