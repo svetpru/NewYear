@@ -4,36 +4,7 @@ let music;
 
 $(document).ready(function () {
 
-    music = new Howl({
-       src: ["img/1.mp3"],
-       loop: true,
-       volume: 0.75
-    });
-});
-
-$("#tree>img").click(function(e){
-
-    $("#tree>img").addClass("sharking");
-
-    music.fade(1, 0, 1000, music);
-    let name = e.target.id;
-
-    if(name == "toy1"){
-        $(e.target).removeClass("sharking");
-        music.play();
-    }
-    else if(name == "toy2"){
-        $(e.target).removeClass("sharking");
-        music.play();
-    }
-    else if(name == "toy3"){
-        $(e.target).removeClass("sharking");
-        music.play();
-    }
-});
-
-
-//Интервал
+    //Интервал
 let timer = setInterval(function(){
     //Время нового года
     let newYear = new Date("1 January 2021 00:00:00");
@@ -54,3 +25,55 @@ let timer = setInterval(function(){
     $("#days").text(days);
 
 }, 1000);
+
+
+    music = new Howl({
+       src: ["img/1.mp3"],
+       loop: true,
+       volume: 0.75
+    });
+});
+
+//Муз дерево
+$("#tree>img").click(function(e){
+
+    $("#tree>img").addClass("sharking");
+
+    music.fade(1, 0, 1000, music);
+    let name = e.target.id;
+
+    if(name == "toy1"){
+        $(e.target).removeClass("sharking");
+        music.play();
+    }
+    else if(name == "toy2"){
+        $(e.target).removeClass("sharking");
+        music.play();
+    }
+    else if(name == "toy3"){
+        $(e.target).removeClass("sharking");
+        music.play();
+    }
+    $("#treeStar").click(function() {
+        music.stop();
+    });
+});
+
+//Анимация шляпы
+$(".hat").click(function (e) {
+    $(e.currentTarget).addClass("hatBounce");
+
+    setTimeout(function(){
+        $(e.currentTarget).removeClass("hatBounce");
+    }, 1500);
+});
+
+//Анимация руки
+setInterval(function(){
+
+    $(".hand-r").addClass("hand-rSwing");
+
+    setTimeout(function(){
+        $(".hand-r").removeClass("hand-rSwing");
+    }, 2500);
+}, 3500);

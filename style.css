@@ -31,80 +31,6 @@ body {
     }
 }
 
-/*Музыкальная игрушка*/
-#tree {
-    position: fixed;
-    left: 5%;
-
-    background-image: url("img/elka.png");
-    background-size: contain;
-    width: 280px;
-    height: 455px;
-}
-#toy1{
-    position: relative;
-    width: 45px;
-    left: 25%;
-    top: 50%;
-    transform-origin: top;
-    animation: toyShake linear 4s infinite; 
-    filter: invert(45%) sepia(69%) saturate(456%) hue-rotate(197deg) brightness(99%) contrast(99%);
-}
-#toy2{
-    position: relative;
-    width: 45px;
-    left: 33%;
-    top: 32%;
-    transform-origin: top;
-    animation: toyShake linear 3s infinite; 
-    filter: invert(45%) sepia(55%) saturate(4034%) hue-rotate(333deg) brightness(97%) contrast(90%);
-}
-#toy3{
-    position: relative;
-    width: 45px;
-    left: 13%;
-    top: 70%;
-    transform-origin: top;
-    animation: toyShake linear 5s infinite; 
-    filter: invert(90%) sepia(11%) saturate(971%) hue-rotate(25deg) brightness(101%) contrast(98%);
-}
-
-.shaking{
-    animation: toyShake linear 3s infinite;
-}
-
-@keyframes toyShake{
-    0%{
-        transform: rotate(0deg);
-    }
-
-    25%{
-        transform: rotate(20deg);
-    }
-
-    50%{
-        transform: rotate(0deg);
-    }
-
-    75%{
-        transform: rotate(-20deg);
-    }
-
-    100%{
-        transform: rotate(0deg);
-    }
-}
-
-
-
-
-#player>img {
-    position: relative;
-    width: 40px;
-    left: 14px;
-    top: 85px;
-    filter: invert(42%) sepia(70%) saturate(581%) hue-rotate(70deg) brightness(101%) contrast(92%);
-}
 
 @font-face {
     font-family: 'Mountains of Christmas';
@@ -115,7 +41,7 @@ body {
 #graz{
     position: absolute;
     left: 35%;
-    top: 35%;
+    top: 37%;
     color: rgb(218, 255, 223);
     font-family: 'Langar', cursive;
 }
@@ -126,8 +52,8 @@ body {
 
 #countdown{
     position: absolute;
-    left:51%;
-    top: 48%;
+    left:61%;
+    top: 52%;
     color: snow;
     font-family: 'Russo One', sans-serif;
 }
