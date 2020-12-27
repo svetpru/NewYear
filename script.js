@@ -20,15 +20,15 @@ $("#tree>img").click(function(e){
 
     if(name == "toy1"){
         $(e.target).removeClass("sharking");
-        music.play(0);
+        music.play();
     }
     else if(name == "toy2"){
         $(e.target).removeClass("sharking");
-        music.play(0);
+        music.play();
     }
     else if(name == "toy3"){
         $(e.target).removeClass("sharking");
-        music.play(0);
+        music.play();
     }
 });
 
