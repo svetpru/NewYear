@@ -4,27 +4,7 @@ let music;
 
 $(document).ready(function () {
 
-    //Интервал
-    let timer = setInterval(function(){
-        //Время нового года
-        let newYear = new Date("1 January 2021 00:00:00");
-        //Нынешнее время
-        let now = new Date();
-        //Разность дат
-        let diff = newYear - now;
-
-        let days = Math.floor(diff/(24*60*60*1000));
-        let hours = Math.floor(diff%(24*60*60*1000) / (60*60*1000));
-        let minutes = Math.floor(diff%(60*60*1000) / (60*1000));
-        let seconds = Math.floor(diff%(60*1000) / 1000);
-
-
-        $(".seconds").text(seconds);
-        $(".minutes").text(minutes + ":");
-        $(".hours").text(hours + ":");
-        $(".days").text(days);
-
-    }, 1000);
+    
 
 
     music = new Howl({
@@ -109,7 +89,7 @@ $("#treeMobile>img").click(function(e){
 // Отсчёт до нового года
 setInterval(function(){
     // Время нового года
-    let newYear = new Date("1 January 2021 00:00:00"); 
+    let newYear = new Date("1 January 2021 00:00:00");  
     // Нынешнее время
     let now = new Date();
     // Разность дат
@@ -123,9 +103,9 @@ setInterval(function(){
         let seconds = Math.floor( (diff%(60*1000)) / 1000);
 
         $(".seconds").text(seconds);
-        $(".minutes").text(minutes + " :");
-        $(".hours").text(hours + " :");
-        $(".days").text(days + " :");
+        $(".minutes").text(minutes + ":");
+        $(".hours").text(hours + ":");
+        $(".days").text(days + ".");
     }
     else{
         $("#countdown p, #countdownMobile p").text("Новый Год Наступил!")
